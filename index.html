@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mail Box</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="top">
+  <img src="user.png" id="userimage">
+  <h2>Mail Box</h2>
+  <a href="login.html" id="login" target="_self">Log in</a>
+  <a href="Registration.html" id="register" target="_self"><h2>Register</h2></a>
+  <input type="text" placeholder="Search" id="search">
+</div>
+
+<div class="main">
+
+  <div class="left">
+    <button onclick="working()">Compose</button>
+    <button onclick="working()">Inbox</button>
+    <button onclick="working()">Starred</button>
+    <button onclick="working()">Sent</button>
+    <button onclick="working()">Spam</button>
+  </div>
+
+  <div class="right">
+
+    <div class="tab">
+      <button onclick="working()">Primary</button>
+      <button onclick="working()">Social</button>
+      <button onclick="working()">Promo</button>
+    </div>
+
+    <div class="mail">
+      <span class="name">Google</span>
+      <span class="time">10:30</span><br>
+      Security alert on your account
+    </div>
+
+    <div class="mail">
+      <span class="name">GitHub</span>
+      <span class="time">Yesterday</span><br>
+      New sign in from Chrome
+    </div>
+
+    <div class="mail">
+      <span class="name">LinkedIn</span>
+      <span class="time">Today</span><br>
+      You appeared in searches
+    </div>
+
+    <div class="mail">
+      <span class="name">Amazon</span>
+      <span class="time">2 days</span><br>
+      Big sale is live
+    </div>
+
+  </div>
+</div>
+
+</body>
+
+
+<script>
+  
+const appName="Email";
+let loginStatus = "Logged in ";
+
+console.log(appName);
+console.log(loginStatus);
+
+function confirmation(){
+    confirm("Do you wnant to submit : ")
+}
+
+const working = () =>{
+    alert("This is under Construction.");
+}
+
+function welcome(name){
+  alert("Welcome " + name)
+}
+
+let user={
+  name:"Guest",
+  mail:"Not set",
+  role:"User",
+  info(){
+    return this.name + " is " + this.mail;
+  },
+  nameChange(newName){
+    this.name=newName;
+  }
+};
+console.log(user.name);
+console.log(user["role"]);
+user.nameChange("Subhash");
+
+console.log(user.name);
+
+
+let inboxCount = 0;
+const MailCount = () =>{
+  inboxCount++;
+  document.getElementById().innerText="Mails in the inbox."
+}
+
+
+
+username = prompt("Enter your name : ");
+welcome(username);
+
+</script>
+</html>

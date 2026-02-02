@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Sign up</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <p id="fp">Create your account</p>
+<div class="fd">
+<form method="post" action="Register.php">
+  <fieldset>
+    <label>Name : </label>
+   <input type="text" name="name">
+   <label>Email : </label>
+   <input type="email" placeholder="Enter your desired mail id" id="fmail" name="email">
+   <label>Password : </label>
+   <input type="password" name="password">
+   <label>Confirm password : </label>
+   <input type="password" name="confirmpassword">
+   <label>Mobile Number : </label>
+   <input type="tel" name="mobile">
+   <label>Date of Birth : </label>
+   <input type="date" name="dob">
+   <label>Gender : </label>
+   <select name="gender">
+    <option>Male</option>
+    <option>Female</option>
+   </select>
+   <input type="submit" value="Register">
+  </fieldset>
+</form>
+</div>
+
+    </body>
+
+    <script>
+        function confirmation(){
+        confirm("Do you wnant to submit : ")
+}
+    </script>
+
+</html>
