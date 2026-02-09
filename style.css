@@ -3,7 +3,13 @@ body{
   font-family: Arial;
 }
 #login{
-  margin-left: 700px;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+}
+#compose{
+    margin-left: 550px;
   text-decoration: none;
   font-size: 30px;
   color: white;
@@ -123,7 +129,7 @@ input{
 .fd{
     place-items: center;
 }
-form{
+.mform{
     background-color:bisque;
     width: 400px;
 }
@@ -138,5 +144,28 @@ select{
   place-items: center;
 }
 #lp{
+  font-size: 20px;
+}
+.compose{
+  font-size: 20px;
+}
+#tcompose{
+  margin-left: 10px;
+}
+#type{
+  margin-left: 10px;
+  font-size: 20px;
+}
+#compose-div{
+  background-color: #eee;
+}
+#google{
+  text-align: center;
+}
+#security-alert{
+  font-size: 30px;
+}
+#download-file{
+  text-decoration: none;
   font-size: 20px;
 }
