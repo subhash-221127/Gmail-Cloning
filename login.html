@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="logindiv">
+
+        <!-- Normal Login Form -->
+        <form class="mform" method="POST" action="login.php">
+            <fieldset>
+                <p id="lp">Log in to your account</p>
+
+                <label>Email</label>
+                <input type="email" name="email" required>
+
+                <label>Password</label>
+                <input type="password" name="password" required>
+
+                <input type="submit" value="Login">
+            </fieldset>
+        </form>
+
+        <!-- Simple Google Login -->
+        <div style="margin-top: 20px; text-align: center;">
+            <p>OR</p>
+            <a href="google_login.php">
+                <label style="cursor:pointer; color:blue;">
+                    Sign in with Google
+                </label>
+            </a>
+        </div>
+
+    </div>
+</body>
+</html>

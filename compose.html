@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="compose-div">
+    <div id="type">New message</div>
+    <form  enctype="multipart/form-data" action="upload.php" method="POST">
+        <div id="tcompose">
+        <div class="compose">
+            <label>To :</label>
+            <input type="email">
+        </div>
+        <div class="compose">
+            <input type="text" placeholder="compose">
+        </div>
+        <div class="compose">
+            <input type="file" name="upload-send">
+        </div>
+        </div>
+        <input type="submit" style="  margin-left: 10px;">
+    </form>
+    </div>
+</body>
+</html>
